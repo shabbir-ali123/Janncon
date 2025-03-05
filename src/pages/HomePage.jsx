@@ -3,7 +3,7 @@ import Home from '../component/home/Home'
 import Reconstruction from '../component/Reconstruction/Reconstruction'
 
 
-const homePage = () => {
+const HomePage = () => {
   return (
     <div>
       <Home/>
@@ -13,4 +13,4 @@ const homePage = () => {
   )
 }
 
-export default homePage
+export default HomePage
