@@ -1,5 +1,6 @@
 import React from 'react';
 import ContactForm from './Contactform';
+import bsdk from "/src/assets/images/new-9.jpeg"
 import { TiSocialFacebook } from "react-icons/ti";
 
 function Getstart() {
@@ -12,7 +13,7 @@ function Getstart() {
         <div className="flex flex-col mx-auto sm:w-[60%] max-sm:w-[100%]">
           {/* Image Container with Overlay */}
           <div className="relative sm:w-[400px] h-64 sm:h-80 md:h-96 lg:h-[400px] max-md:mx-auto">
-            <img src="/src/assets/images/new-9.jpeg" alt="" className="w-full h-full object-cover" />
+            <img src={bsdk} alt="" className="w-full h-full object-cover" />
             {/* Black Overlay */}
             <div className="absolute inset-0 bg-black opacity-50"></div>
           </div>
