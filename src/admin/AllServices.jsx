@@ -4,7 +4,7 @@ import axios from "axios";
 import { toast, ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
-const API_BASE_URL = "http://localhost:5656";
+const API_BASE_URL = "https://jandrnw.com/";
 
 const AllServices = () => {
   const [services, setServices] = useState([]);

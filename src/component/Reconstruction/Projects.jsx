@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import axios from 'axios';
 
-const API_BASE_URL = 'http://localhost:5656';
+const API_BASE_URL = 'https://jandrnw.com/';
 
 function Projects() {
     const [projects, setProjects] = useState([]);

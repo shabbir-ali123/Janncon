@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import axios from 'axios';
 import banner from '../../assets/images/new-8.jpeg';
 
-const API_BASE_URL = 'http://localhost:5656'; 
+const API_BASE_URL = 'https://jandrnw.com/'; 
 
 function OurProjects() {
     const [projects, setProjects] = useState([]);

@@ -5,7 +5,7 @@ import GalleryApi from '../component/92ndAve/Gallery'; // Adjust the path as nee
 import Testimonials from '../component/92ndAve/Testimonials'; // Ensure this is correctly imported
 import brandbg from '../assets/images/brandbg.jpg'; // Adjust the path as needed
 
-const API_BASE_URL = 'http://localhost:5656';
+const API_BASE_URL = 'https://jandrnw.com/';
 
 function ProjectDetails() {
   const { id } = useParams(); // Get the project ID from the URL

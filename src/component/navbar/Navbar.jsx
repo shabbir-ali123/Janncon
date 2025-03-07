@@ -114,37 +114,14 @@ function Navbar() {
               Home
             </Link>
 
-            {/* Mobile Services Dropdown */}
-            <div
-              onClick={() => handleMobileDropdownToggle("services")}
-              className=" text-white flex justify-between items-center cursor-pointer py-2"
-            >
-              Services <MdKeyboardArrowDown className="text-white" />
-            </div>
-            {openDropdown === "services" && (
-              <div className="bg-white py-2 w-full">
-                {[
-                  "Mitigation and restoration",
-                  "Flooring/carpet",
-                  "Drywall/painting",
-                  "interior/exteroir finishing",
-                  "Framing",
-                  "Emergency services",
-                ].map((item, index) => (
-                  <a
-                    key={index}
-                    href="#"
-                    className="block text-gray-900 px-4 py-2 border-b border-gray-300"
-                  >
-                    {item}
-                  </a>
-                ))}
-              </div>
-            )}
-
+            
+            <Link to="/services " className="block text-white">
+              Services
+            </Link>
+            
            
 
-            <Link to="/services" className="block text-white">
+            <Link to="/projects" className="block text-white">
               Our Project
             </Link>
         

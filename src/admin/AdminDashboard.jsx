@@ -10,7 +10,7 @@ const AdminDashboard = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const res = await axios.get("http://localhost:5656/api/admin/dashboard", {
+        const res = await axios.get("https://jandrnw.com/api/admin/dashboard", {
           headers: { Authorization: `Bearer ${token}` },
         });
         setAdminData(res.data);
@@ -18,12 +18,12 @@ const AdminDashboard = () => {
         if (error.response && error.response.status === 401) {
           // Token expired, attempt to refresh
           try {
-            const refreshRes = await axios.post("http://localhost:5656/api/auth/refresh", {
+            const refreshRes = await axios.post("https://jandrnw.com/api/auth/refresh", {
               refreshToken: localStorage.getItem("refreshToken"),
             });
             localStorage.setItem("token", refreshRes.data.accessToken);
             // Retry fetching data
-            const retryRes = await axios.get("http://localhost:5656/api/admin/dashboard", {
+            const retryRes = await axios.get("https://jandrnw.com/api/admin/dashboard", {
               headers: { Authorization: `Bearer ${refreshRes.data.accessToken}` },
             });
             setAdminData(retryRes.data);
