@@ -1,5 +1,5 @@
 import React from "react";
-import teamimage from "/src/assets/images/new-5.jpeg";
+import teamimage from "/src/assets/images/new-2.jpeg";
 import { Link } from "react-router-dom";
 
 function Team() {

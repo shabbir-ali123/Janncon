@@ -1,6 +1,6 @@
 import React from 'react';
 import ContactForm from './Contactform';
-import bsdk from "/src/assets/images/new-9.jpeg"
+import bsdk from "/src/assets/images/new-1.jpeg"
 import { TiSocialFacebook } from "react-icons/ti";
 
 function Getstart() {
