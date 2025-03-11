@@ -34,7 +34,7 @@ function ContactForm() {
     setResponseMessage("");
 
     try {
-      const response = await fetch("https://jandrnw.com//api/contact", {
+      const response = await fetch("http://195.35.1.36/api/contact", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

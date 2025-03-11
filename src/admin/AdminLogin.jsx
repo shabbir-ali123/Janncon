@@ -10,7 +10,7 @@ const AdminLogin = () => {
     e.preventDefault();
 
     try {
-      const res = await axios.post("https://jandrnw.com/api/admin/login", { email, password });
+      const res = await axios.post("http://195.35.1.36/api/admin/login", { email, password });
       localStorage.setItem("token", res.data.token);
     //   alert("Login Successful!");
       window.location.href = "/admin/dashboard";

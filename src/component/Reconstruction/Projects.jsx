@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import axios from 'axios';
 
-const API_BASE_URL = 'https://jandrnw.com/';
+const API_BASE_URL = 'http://195.35.1.36/';
 
 function Projects() {
     const [projects, setProjects] = useState([]);
@@ -17,13 +17,14 @@ function Projects() {
             }
         };
 
+        // Fetch latest projects when the component is mounted
         fetchLatestProjects();
-    }, []);
+    }, []); // Empty dependency array ensures this runs only once on mount
 
     return (
         <div className="pt-[40px] bg-primary text-center py-8 font-worksans">
-            <div className='max-w-6xl mx-auto'>
-                <div className='mb-16'>
+            <div className="max-w-6xl mx-auto">
+                <div className="mb-16">
                     <h2 className="text-[36px] md:text-[46px] mb-4 text-white">Recent Projects</h2>
                     <div className="w-[30%] md:w-[15%] mx-auto border-b-2 border-white mb-6"></div>
                 </div>

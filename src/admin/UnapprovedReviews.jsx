@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import axios from "axios";
 import { FaStar } from "react-icons/fa";
 
-const API_BASE_URL = "https://jandrnw.com/"; // Adjust if needed
+const API_BASE_URL = "http://195.35.1.36/"; // Adjust if needed
 
 function UnapprovedReviews() {
     const [unapprovedReviews, setUnapprovedReviews] = useState([]);
