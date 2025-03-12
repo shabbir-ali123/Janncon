@@ -10,7 +10,7 @@ import image4 from "../../assets/images/image3.jpeg";
 import image5 from "../../assets/images/image4.jpeg";
 import image6 from "../../assets/images/image5.jpg";
 
-const API_BASE_URL = "https://jandrnw.com/";
+const API_BASE_URL = "https://backend.jandrnw.com";
 
 const ConstructionServices = () => {
   const [services, setServices] = useState([]);

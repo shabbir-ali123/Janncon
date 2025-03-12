@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import axios from "axios";
 import { FaStar } from "react-icons/fa";
 
-const API_BASE_URL = "http://195.35.1.36";
+const API_BASE_URL = "https://backend.jandrnw.com";
 
 function Testimonials({ projectId }) {
     const [testimonials, setTestimonials] = useState([]);

@@ -19,12 +19,12 @@ const AdminDashboard = () => {
         if (error.response && error.response.status === 401) {
           // Token expired, attempt to refresh
           try {
-            const refreshRes = await axios.post("http://195.35.1.36/api/auth/refresh", {
+            const refreshRes = await axios.post("https://backend.jandrnw.com/api/auth/refresh", {
               refreshToken: localStorage.getItem("refreshToken"),
             });
             localStorage.setItem("token", refreshRes.data.accessToken);
             // Retry fetching data
-            const retryRes = await axios.get("http://195.35.1.36/admin/dashboard", {
+            const retryRes = await axios.get("https://backend.jandrnw.com/admin/dashboard", {
               headers: { Authorization: `Bearer ${refreshRes.data.accessToken}` },
             });
             setAdminData(retryRes.data);

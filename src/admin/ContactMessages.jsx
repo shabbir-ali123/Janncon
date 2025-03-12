@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 
-const API_BASE_URL = 'http://195.35.1.36'; // Adjust the base URL as needed
+const API_BASE_URL = 'https://backend.jandrnw.com'; // Adjust the base URL as needed
 
 function ContactMessages() {
     const [messages, setMessages] = useState([]);

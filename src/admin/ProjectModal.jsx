@@ -17,8 +17,8 @@ const ProjectModal = ({ isOpen, onClose, project, setProjects }) => {
   const handleSubmit = (e) => {
     e.preventDefault();
     const url = project
-      ? `http://195.35.1.36/api/projects/${project.id}`
-      : "http://195.35.1.36/api/projects";
+      ? `https://backend.jandrnw.com/api/projects/${project.id}`
+      : "https://backend.jandrnw.com/api/projects";
 
     const method = project ? "put" : "post";
 
