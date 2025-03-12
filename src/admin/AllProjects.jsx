@@ -4,7 +4,7 @@ import axios from "axios";
 import { toast, ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
-const API_BASE_URL = 'env.process.BASE_URL';
+const API_BASE_URL = 'https://backend.jandrnw.com';
 
 const AllProjects = () => {
   const [projects, setProjects] = useState([]);
