@@ -1,9 +1,9 @@
 import React from 'react';
-import servicesbg from '../../assets/images/new-7.jpeg';
+import servicesbg from '../../assets/images/serviceBg.jpeg';
 
 function Servicehero() {
     return (
-        <section className="relative bg-cover bg-center h-[80vh] flex items-center justify-center text-center text-white font-worksans"
+        <section className="relative bg-conatin bg-center h-[80vh] flex items-center justify-center text-center text-white font-worksans"
             style={{ backgroundImage: `url(${servicesbg})` }}>
             
             {/* Background Overlay */}

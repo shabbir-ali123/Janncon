@@ -1,7 +1,7 @@
 import { useState } from "react";
 import bgimage1 from "/src/assets/images/mitigationnew.jpeg";
-import bgimage2 from "/src/assets/images/new-8.jpeg";
-import bgimage3 from "/src/assets/images/new-7.jpeg";
+import bgimage2 from "/src/assets/image-1.jpeg";
+import bgimage3 from "/src/assets/images/new-10.jpeg";
 import { useNavigate } from "react-router-dom";
 
 function Home() {

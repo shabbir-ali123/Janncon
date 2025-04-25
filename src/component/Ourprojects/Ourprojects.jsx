@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';  
 import axios from 'axios';
-import banner from '../../assets/images/new-8.jpeg';
+import banner from '../../assets/image-2.jpeg';
 
 const API_BASE_URL = 'https://backend.jandrnw.com'; 
 
@@ -23,8 +23,10 @@ function OurProjects() {
                 className="bg-cover bg-center h-[40vh] flex items-center font-worksans justify-center text-center text-white"
                 style={{ backgroundImage: `url(${banner})` }}
             >
+                
                 <div className="z-10 px-4 w-[60%] mx-auto">
-                    <h1 className="sm:text-[48px] max-sm:text-[32px]">OUR PROJECTS</h1>
+                
+                    <h1 className="sm:text-[48px] text-black max-sm:text-[32px]">OUR PROJECTS</h1>
                 </div>
             </div>
 

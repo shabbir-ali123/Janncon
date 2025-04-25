@@ -1,26 +1,26 @@
 import { useState } from "react";
 import axios from "axios";
-import { useNavigate } from "react-router-dom"; // Import useNavigate hook for navigation
+import { useNavigate } from "react-router-dom"; 
 
 const AdminLogin = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [error, setError] = useState("");
-  const [loading, setLoading] = useState(false); // Add loading state
-  const navigate = useNavigate(); // Initialize navigate hook
+  const [loading, setLoading] = useState(false); 
+  const navigate = useNavigate(); 
 
   const handleLogin = async (e) => {
     e.preventDefault();
 
-    setLoading(true); // Set loading to true when form is submitted
+    setLoading(true); 
     try {
       const res = await axios.post("https://backend.jandrnw.com/api/admin/login", { email, password });
       localStorage.setItem("token", res.data.token);
       navigate("/admin/dashboard"); 
     } catch (err) {
-      setError("Invalid Credentials"); // Show error if login fails
+      setError("Invalid Credentials"); 
     } finally {
-      setLoading(false); // Set loading to false after request is complete
+      setLoading(false); 
     }
   };
 
@@ -55,10 +55,10 @@ const AdminLogin = () => {
           <div>
             <button
               type="submit"
-              disabled={loading} // Disable the button when loading
+              disabled={loading} 
               className="w-full py-3 bg-indigo-600 text-white rounded-md hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 transition duration-300 ease-in-out"
             >
-              {loading ? "Logging in..." : "Login"} {/* Show loading text */}
+              {loading ? "Logging in..." : "Login"}
             </button>
           </div>
         </form>
